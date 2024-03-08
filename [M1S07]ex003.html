@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            background-color: rgb(157, 211, 251);
+        }
+            
+       .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+            align-items: center;
+            justify-items: center;
+            height: 75vh;
+            background-color: rgb(197, 213, 244);
+            width: 93%;
+            border-radius: 100px;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        .left-section {
+            grid-column: 1 / 2;
+            }
+
+        .right-section {
+            grid-column: 2 / 3;
+            }
+
+        .form-input {
+            display: grid;
+            grid-gap: 10px;
+            }
+
+        .button {
+            display: grid;
+            grid-gap: 10px;
+        }
+        .fa-google{
+            margin-left: -15px;
+        }
+        img{
+            width: 330px;
+            border-radius: 30px;
+            height: 250px;
+
+        }
+       
+    </style>
+            
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left-section">
+            <h1>Sign In to this session</h1>
+            <p>If you dont have an account, you can <a href="ex004.html" target="_blank">Register here</a>!</p>
+            <img src="https://www.neobyte.com.br/wp-content/uploads/2020/10/analytics.png.webp" alt="Descrição da imagem">
+
+        </div>
+        <div class="right-section">
+          
+            <div class="form-input">
+                <input type="email" placeholder="Email address">
+                <input type="password" placeholder="Password">
+            </div>
+            <button class="button">Sign In</button>
+            <p>or</p>
+            <div class="button">
+                <button>
+                    <i class="fab fa-google"></i> <a href="https://www.google.com" target="_blank">Continue with Google</a>
+                </button>
+                <button>
+                    <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/" target="_blank">Continue with Facebook</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

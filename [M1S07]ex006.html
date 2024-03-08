@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BikCraft</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    float: right;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #444;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+}
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>bikcraft</h1>
+      <nav class="navbar">
+        <a href="#bicycles">Bicicletas</a>
+        <a href="#insurance">Seguros</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </div>
+</header>
+  <main class="main">
+    <div class="container">
+      <section class="hero">
+        <div class="hero-text">
+          <h2>Bicicletas feitas sob medida.</h2>
+          <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+          <button>ESCOLHA A SUA</button>
+        </div>
+        <div class="hero-image">
+          <img src="imagem/nimbus.png" alt="foto nimbus">
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

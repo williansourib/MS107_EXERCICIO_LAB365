@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout com Grid</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: grid;
+        grid-template-columns: 100px auto; 
+        grid-template-rows: 100px auto; 
+        grid-template-areas:
+            "sidebar header"
+            "sidebar content";
+        height: 100vh;
+    }
+    
+    .sidebar {
+        grid-area: sidebar;
+        background-color: #171014; 
+    }
+    
+    .header {
+        grid-area: header;
+        background-color: #ff33b4; 
+    }
+    
+    .content {
+        grid-area: content;
+        background-color: #4abdff; 
+    }
+</style>
+</head>
+<body>
+    <div class="sidebar">
+        
+        Sidebar
+    </div>
+    <div class="header">
+       
+        Header
+    </div>
+    <div class="content">
+        
+        Content
+    </div>
+</body>
+</html>
